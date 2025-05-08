@@ -1,0 +1,19 @@
+package javaapplication5;
+
+import java.util.Scanner;
+
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+      Scanner ler = new Scanner (System.in);
+      double celsius;  
+      System.out.println("INSIRA A TEMPERATURA EM CELSIUS PARA A CONVERSÃO");
+      celsius = ler.nextDouble();
+        System.out.println(converterFahrenheit(celsius));
+        
+    }
+    public static double converterFahrenheit(double celsius ){
+       
+      return (celsius * 1.8) + 32;   //Converter para Fahrenheit
+    }
+}
