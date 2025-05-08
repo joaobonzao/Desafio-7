@@ -1,0 +1,21 @@
+package javaapplication5;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+      Scanner ler = new Scanner (System.in);
+      DecimalFormat decimal = new DecimalFormat ("0.00");
+      double raio;  
+      System.out.println("Insira o raio para calcular o circulo");
+      raio = ler.nextDouble();
+        System.out.println(decimal.format(areaCirculo(raio)));
+        
+    }
+    public static double areaCirculo(double raio ){
+       
+      return (Math.PI * Math.pow(raio, 2));  //Calcular area
+  }
+}
