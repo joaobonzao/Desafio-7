@@ -1,0 +1,25 @@
+package javaapplication5;
+
+import java.util.Scanner;
+
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+      Scanner ler = new Scanner (System.in);
+      String txt1, txt2;
+      System.out.println("INSIRA 2 TEXTOS IGUAIS");
+      txt1 = ler.nextLine();
+      txt2 = ler.nextLine();
+      System.out.println(compararString(txt1, txt2));
+          
+      
+    }
+    public static String  compararString(String txt1, String txt2){
+        if(txt1.equals(txt2)){
+        return "Strings iguais!";               
+        }else{
+        return "Strings diferentes!";
+        }
+        
+    }
+}
